@@ -1,0 +1,263 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #222;
+    background-color: #ffffff;
+    font-family: 'Lato', sans-serif;
+}
+
+* {
+    font-family: "Lato", sans-serif;
+}
+
+/* Barra superior */
+.empty {
+    background-color: #166600;
+    width: 100vw;
+    height: 15px;
+    margin-bottom: 20px;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 200px;
+    background-color: #ffffff;
+}
+
+.button {
+    background-color: #166600;
+    color: white;
+    font-family: "Lato", sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 12px;
+    text-align: center;
+    width: 100px;
+    margin-top: 10px;
+    border: 3px solid #166600;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease, border 0.3s ease;
+}
+
+.button:hover {
+    background-color: white;
+    color: #166600;
+    border: 3px solid #166600;
+}
+
+/* Sección Hero */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 50px;
+    padding: 0px 200px;
+}
+
+.title {
+    flex: 1;
+    max-width: 50%;
+}
+
+.title h1 {
+    font-family: "Lato", sans-serif;
+    font-size: 96px;
+    text-align: center;
+    line-height: normal;
+    font-weight: bold;
+    color: #422D1C;
+    margin-bottom: 20px;
+    margin-top: 0;
+}
+
+.form h2 {
+    font-family: "Lato", sans-serif;
+    font-size: 60px;
+    font-weight: 800;
+    color: #422D1C;
+    margin-bottom: 10px;
+    line-height: normal;
+    margin-top: 0px;
+}
+
+.form {
+    flex: 1;
+    max-width: 40%;
+}
+
+.form__group {
+    margin-bottom: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form__group input,
+.form__group select {
+    border: none;
+    border-bottom: 2px solid #422D1C;
+    padding: 5px;
+    width: 100%;
+    box-sizing: border-box;
+    font-family: "Lato", sans-serif;
+    font-size: 16px;
+}
+
+.form__group label {
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-family: "Lato", sans-serif;
+    font-size: 16px;
+    color: #422D1C;
+}
+
+#button {
+    background-color: #166600;
+    color: white;
+    font-family: "Lato", sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 12px;
+    text-align: center;
+    width: 20%;
+    margin-top: 10px;
+    border: 3px solid #166600;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease, border 0.3s ease;
+}
+
+#button:hover {
+    background-color: white;
+    color: #166600;
+    border: 3px solid #166600;
+}
+
+/* Información */
+.info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+    padding: 100px 200px;
+    margin-top: 50px;
+}
+
+.info .paragraph h3 {
+    font-size: 55px;
+    font-weight: 800;
+    margin: 0;
+    line-height: normal;
+    color: #422D1C;
+}
+
+.info .paragraph p {
+    font-size: 18px;
+    line-height: 1.6;
+    width: 90%;
+    margin-top: 20px;
+}
+
+/* Sección .bottom */
+.bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    padding: 100px 200px;
+    margin-top: 50px;
+    background-image: url(/Images/Recurso\ 1.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 50%;
+    transition-duration: 1s;
+    transition-timing-function: cubic-bezier(0, .33, .07, 1.03);
+    overflow: hidden;
+}
+
+.bottom .bottom-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 30px;
+}
+
+.bottom .bottom-info h3 {
+    font-size: 30px;
+    width: 70%;
+    text-align: center;
+    color: #422D1C;
+    font-weight: 900;
+    margin: 0;
+    line-height: normal;
+}
+
+.bottom .bottom-info button {
+    background-color: #166600;
+    color: white;
+    font-family: "Lato", sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 12px;
+    text-align: center;
+    width: 20%;
+    margin-top: 10px;
+    border: none;
+    cursor: pointer;
+    border: 3px solid #166600;
+    transition: background-color 0.3s ease, color 0.3s ease, border 0.3s ease;
+}
+
+.bottom .bottom-info button:hover {
+    background-color: white;
+    color: #166600;
+    border: 3px solid #166600;
+    
+}
+
+.empty-2 {
+    background-color: #166600;
+    width: 100vw;
+    height: 40px;
+}
+
+
+section {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+section.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+/* Responsivo */
+@media (max-width: 768px) {
+    header {
+        padding: 10px 20px;
+    }
+
+    .hero {
+        flex-direction: column; 
+        padding: 20px;
+       
+    }
+
+    .title, .form {
+        flex: none;
+        width: 100%; 
+    }
+
+    .button {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+}
+
+

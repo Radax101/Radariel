@@ -8,7 +8,9 @@
     <link
       href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap"
       rel="stylesheet"/>
-      <script src="script.js" defer></script>
+    <!-- Agregar el script de EmailJS -->
+    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script src="script.js" defer></script>
   </head>
   <body>
     <!-- Espaciador superior -->
@@ -26,7 +28,6 @@
     <section class="hero">
       <div class="title">
         <h1>Helping Students Get Ahead in Life</h1>
-
         <img
           src="Students.png"
           alt="Students"
@@ -36,24 +37,15 @@
       </div>
       <div class="form">
         <h2>Register Now to Our Online Webinar!</h2>
-        <form action="#" method="post">
-          <!-- Campo: Nombre -->
+        <form id="webinar-form" action="#" method="post">
           <div class="form__group">
-            <label for="first-name"
-              >First Name <span class="required">*</span></label
-            >
+            <label for="first-name">First Name <span class="required">*</span></label>
             <input type="text" id="first-name" />
-            <div class="form__error"></div>
           </div>
-          <!-- Campo: Apellido -->
           <div class="form__group">
-            <label for="last-name"
-              >Last Name <span class="required">*</span></label
-            >
+            <label for="last-name">Last Name <span class="required">*</span></label>
             <input type="text" id="last-name" />
-            <div class="form__error"></div>
           </div>
-          <!-- Campo: Género -->
           <div class="form__group">
             <label for="gender">Gender <span class="required">*</span></label>
             <select id="gender" name="gender">
@@ -62,9 +54,7 @@
               <option value="female">Female</option>
               <option value="other">Other</option>
             </select>
-            <div class="form__error"></div>
           </div>
-          <!-- Campo: Edad -->
           <div class="form__group">
             <label for="age">Age <span class="required">*</span></label>
             <select id="age">
@@ -74,50 +64,32 @@
               <option value="45-59">45-59 años</option>
               <option value="60+">60 años o más</option>
             </select>
-            <div class="form__error"></div>
           </div>
-          <!-- Campo: Idioma -->
           <div class="form__group">
-            <label for="language"
-              >Language <span class="required">*</span></label
-            >
+            <label for="language">Language <span class="required">*</span></label>
             <select id="language">
               <option value="" disabled selected>- Choose an Option -</option>
               <option value="english">English</option>
               <option value="spanish">Spanish</option>
               <option value="french">French</option>
             </select>
-            <div class="form__error"></div>
           </div>
-          <!-- Campo: Teléfono -->
           <div class="form__group">
-            <label for="phone"
-              >Telephone Number <span class="optional">(Optional)</span></label
-            >
+            <label for="phone">Telephone Number <span class="optional">(Optional)</span></label>
             <input type="tel" id="phone" />
-            <div class="form__error"></div>
           </div>
-          <!-- Campo: Email -->
           <div class="form__group">
             <label for="email">Email <span class="required">*</span></label>
             <input type="email" id="email" />
-            <div class="form__error"></div>
           </div>
-          <!-- Aceptación de términos -->
           <div class="checkbox-label">
             <input type="checkbox" id="terms" />
-            <label for="terms"
-              >By Submitting I Agree with the Terms &amp; Conditions.</label
-            >
-            <div class="form__error"></div>
+            <label for="terms">By Submitting I Agree with the Terms &amp; Conditions.</label>
           </div>
-          <!-- Botón de envío -->
           <button type="button" id="button">Submit</button>
         </form>
       </div>
     </section>
-
-    <!-- Sección de Información -->
     <section class="info">
       <div class="paragraph">
         <h3>
@@ -137,7 +109,7 @@
       </div>
       <div class="image-info">
         <img
-          src="Recurso 2.png"
+          src="/Images/Recurso 2.png"
           alt="Info Image"
           width="700px"
           
@@ -148,7 +120,7 @@
     <!-- Sección Final -->
     <section class="bottom">
       <div class="bottom-info">
-        <img src="Logo.png" alt="Logo" width="350px" />
+        <img src="/Images/Logo.png" alt="Logo" width="350px" />
         <h3>
           Unlock Your Potential and Reach Your Goals with Our Dynamic Online
           Webinars!
